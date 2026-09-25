@@ -1,0 +1,15 @@
+title: "[Idea] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share an idea for the CLI. Once it is concrete, it may become a feature request.
+
+        **Discussions are public.** Never paste an API key, an access token, or personal data.
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: The workflow it would improve and how you imagine using it.
+    validations:
+      required: true

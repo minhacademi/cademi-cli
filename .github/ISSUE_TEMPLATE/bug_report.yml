@@ -17,6 +17,28 @@ body:
         I ran `cademi products list --all` and expected every product, but got only the first page.
     validations:
       required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Sign-in and profiles (auth)
+        - API commands (products, users, …)
+        - cademi api
+        - cademi listen
+        - cademi config
+        - cademi sandbox
+        - upload or download
+        - update
+        - Other
+  - type: dropdown
+    id: account-environment
+    attributes:
+      label: Account environment
+      options:
+        - production
+        - sandbox
+        - not sure
   - type: textarea
     id: command
     attributes:

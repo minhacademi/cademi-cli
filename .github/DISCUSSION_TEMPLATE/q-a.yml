@@ -1,0 +1,21 @@
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Check [cademi.dev/cli](https://cademi.dev/cli) first. Found a bug? Run `cademi bug` instead.
+
+        **Discussions are public.** Never paste an API key, an access token, a signing secret, or personal data of your users.
+  - type: textarea
+    id: question
+    attributes:
+      label: What you want to do
+      description: The task and what you tried, with the commands you ran.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: CLI version
+      description: Output of `cademi version`.

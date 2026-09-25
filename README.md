@@ -37,6 +37,8 @@ Run `cademi bug`. It opens a new issue here with your CLI version, platform, and
 - **Security vulnerabilities:** never in a public issue. See [SECURITY.md](SECURITY.md).
 - **A problem with the API itself** (an endpoint, your account, or your data): contact Cademí support.
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for what goes where.
+
 Issues are public. Never paste an API key (`ck_live_...`, `ck_test_...`), an access token, a signing secret, or personal data of your users.
 
 ## Release notes

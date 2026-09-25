@@ -1,0 +1,59 @@
+name: Install or update problem
+description: The installer, `cademi update`, or the automatic update did not work.
+labels: ["install", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Installation and updates are described in [Installation](https://cademi.dev/cli/installation).
+
+        **This issue is public.** Never paste an API key (`ck_live_...`, `ck_test_...`), an access token, or a signing secret.
+  - type: dropdown
+    id: method
+    attributes:
+      label: How you installed or updated
+      options:
+        - install.sh (macOS or Linux)
+        - install.ps1 (Windows)
+        - cademi update
+        - Automatic update
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Operating system and architecture
+      placeholder: macOS 15 on Apple silicon, Ubuntu 24.04 x86_64, Windows 11 ARM64
+    validations:
+      required: true
+  - type: input
+    id: shell
+    attributes:
+      label: Shell
+      placeholder: zsh, bash, fish, PowerShell 7
+  - type: textarea
+    id: output
+    attributes:
+      label: Command and full output
+      description: The exact command you ran and everything it printed.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: CLI version
+      description: Output of `cademi version`, if the CLI is installed.
+      placeholder: cademi 0.1.1 (api 3.4.4, commit 517cbbe)
+  - type: textarea
+    id: update-check
+    attributes:
+      label: Output of `cademi update --check`
+      render: text
+  - type: checkboxes
+    id: network
+    attributes:
+      label: Network
+      options:
+        - label: I am behind a proxy, a firewall, or a corporate network.

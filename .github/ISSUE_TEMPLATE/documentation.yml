@@ -1,0 +1,23 @@
+name: Documentation problem
+description: Something in the CLI guides at cademi.dev/cli is wrong, unclear, or missing.
+labels: ["documentation", "needs-triage"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The URL of the page.
+      placeholder: https://cademi.dev/cli/commands
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong or missing
+      description: Quote the text if it helps. If the CLI behaves differently from the page, include the command and its output.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested change
