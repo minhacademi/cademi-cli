@@ -3,7 +3,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please write in English, so everyone who uses the CLI can follow the conversation.
+        Please write in English, so everyone who integrates with Cademí can follow the conversation.
 
         Share an idea for the CLI. Once it is concrete, it may become a feature request.
 

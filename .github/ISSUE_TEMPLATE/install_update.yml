@@ -1,11 +1,11 @@
 name: Install or update problem
 description: The installer, `cademi update`, or the automatic update did not work.
-labels: ["install", "needs-triage"]
+labels: ["cli", "install", "needs-triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        Please write in English, so everyone who uses the CLI can follow the conversation.
+        Please write in English, so everyone who integrates with Cademí can follow the conversation.
 
         Installation and updates are described in [Installation](https://cademi.dev/cli/installation).
 

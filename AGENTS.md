@@ -1,4 +1,4 @@
-# cademi CLI: guide for AI agents
+# Cademí API and CLI: guide for AI agents
 
 `cademi` is the command-line tool for the Cademí API v3 (an LMS). Every API operation is a command. This file is the short version; the full guides are at https://cademi.dev/cli, and every page is also available as Markdown (append `.md`, for example https://cademi.dev/cli/commands.md). Index for LLMs: https://cademi.dev/llms.txt.
 
@@ -51,9 +51,11 @@ In `cademi commands --json`, flags shared by many commands are described once un
 
 ## Report a problem
 
-- Run `cademi bug --print`. It prints a prefilled issue URL for this repository with the CLI version, platform and settings (no secrets). A person reviews and submits it.
-- With the GitHub CLI: `gh issue create -R minhacademi/cademi-cli --label bug --title "..." --body "..."`, including the command, its output, `cademi version` and `cademi env`.
-- Write in English. Never include an API key, an access token, a signing secret, or personal data of users. Security vulnerabilities go to the private report (see [SECURITY.md](SECURITY.md)). Problems with the API itself or an account go to Cademí support.
+This repository takes issues for both the API v3 and the CLI.
+
+- **API bug** (a response that contradicts the docs, even through the CLI): confirm with `cademi api <METHOD> <path> --debug`, then `gh issue create -R minhacademi/developers --label api --label bug --title "..." --body "..."` with the endpoint, the `request_id`, the status and `error.code`, what you expected (link the docs page) and the API release (`X-Cademi-Release`).
+- **CLI bug:** `cademi bug --print` prints a prefilled issue URL (CLI version, platform, settings, no secrets) for a person to review and submit. With the GitHub CLI: `gh issue create -R minhacademi/developers --label cli --label bug --title "..." --body "..."`, with the command, its output, `cademi version` and `cademi env`.
+- Write in English. Never include an API key, an access token, a signing secret, or personal data of users. Security vulnerabilities go to the private report (see [SECURITY.md](SECURITY.md)). Questions about an account, plan or its data go to Cademí support.
 - This repository does not accept pull requests; see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Do not

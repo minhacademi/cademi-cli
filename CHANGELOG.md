@@ -1,4 +1,6 @@
-# Changelog
+# CLI changelog
+
+Release notes of the `cademi` CLI. API release notes: https://cademi.dev/api/changelog
 
 ## 0.1.3 - 2026-09-25
 

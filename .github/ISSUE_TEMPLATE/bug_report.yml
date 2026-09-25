@@ -1,15 +1,15 @@
-name: Bug report
+name: CLI bug report
 description: Something in the cademi CLI does not work as documented.
-labels: ["bug", "needs-triage"]
+labels: ["cli", "bug", "needs-triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        Please write in English, so everyone who uses the CLI can follow the conversation.
+        Please write in English, so everyone who integrates with Cademí can follow the conversation.
 
-        Thanks for reporting. `cademi bug` fills in the environment fields for you.
+        Thanks for reporting. `cademi bug` fills in the environment fields for you. If the problem is in the API response itself, not in the CLI, use the API bug report instead.
 
-        **This issue is public.** Never paste an API key (`ck_live_...`, `ck_test_...`), an access token, a signing secret, or personal data of your users. For security problems, see [SECURITY.md](https://github.com/minhacademi/cademi-cli/blob/main/SECURITY.md).
+        **This issue is public.** Never paste an API key (`ck_live_...`, `ck_test_...`), an access token, a signing secret, or personal data of your users. For security problems, see [SECURITY.md](https://github.com/minhacademi/developers/blob/main/SECURITY.md).
   - type: textarea
     id: what-happened
     attributes:

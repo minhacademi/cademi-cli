@@ -1,0 +1,72 @@
+name: API bug report
+description: An endpoint of the Cademí API v3 does not behave as documented.
+labels: ["api", "bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please write in English, so everyone who integrates with Cademí can follow the conversation.
+
+        Use this form for the public API contract: a documented behavior, status code, error, field, or event that does not match what the API does. The API guides and reference are at [cademi.dev/api](https://cademi.dev/api).
+
+        **This issue is public.** Never paste an API key (`ck_live_...`, `ck_test_...`), an access token, a webhook signing secret, or personal data of your users (names, emails, documents). Replace IDs of real people with placeholders if needed.
+
+        Questions about your account, billing, or access to your own data go to Cademí support, not here. Security vulnerabilities go to the [private report](https://github.com/minhacademi/developers/security/advisories/new).
+  - type: input
+    id: endpoint
+    attributes:
+      label: Endpoint
+      description: Method and path, as in the reference.
+      placeholder: PATCH /api/v3/products/{product_id}
+    validations:
+      required: true
+  - type: input
+    id: request-id
+    attributes:
+      label: request_id
+      description: The `request_id` of the call (in the error body or the `X-Request-Id` header). It lets Cademí find the call without any other data.
+      placeholder: 01J8Z3ZQ4H8K2M0T1S9P7YQF5C
+  - type: dropdown
+    id: account-environment
+    attributes:
+      label: Account environment
+      options:
+        - sandbox
+        - production
+        - not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you sent, what you expected (quote or link the documentation), and what the API returned.
+    validations:
+      required: true
+  - type: textarea
+    id: exchange
+    attributes:
+      label: Request and response
+      description: The request (without the `Authorization` and `X-API-Key` headers) and the response status, `error.code`, and body. Remove personal data.
+      render: http
+  - type: input
+    id: release
+    attributes:
+      label: API release
+      description: The `X-Cademi-Release` response header, or `cademi version` if you use the CLI.
+      placeholder: 3.4.4
+  - type: dropdown
+    id: client
+    attributes:
+      label: Client
+      options:
+        - cademi CLI
+        - Go SDK
+        - HTTP client or other SDK
+        - Webhook receiver
+  - type: input
+    id: docs
+    attributes:
+      label: Documentation link
+      description: The page that describes the expected behavior, if any.
+      placeholder: https://cademi.dev/api/operations

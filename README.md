@@ -1,20 +1,35 @@
-# cademi
+# Cademí for developers
 
-`cademi` is the command-line tool for the [Cademí API v3](https://cademi.dev/api). It runs every API operation as a command, signs in as an administrator or with a credential alone, forwards events to your local application, and applies declarative configuration to your account.
-
-This repository is where you report bugs, request features, and ask questions about the CLI. The documentation lives at **[cademi.dev/cli](https://cademi.dev/cli)**.
+This is the public place to report bugs, request features, and ask questions about the **[Cademí API v3](https://cademi.dev/api)** and the **[cademi CLI](https://cademi.dev/cli)**. The documentation lives at **[cademi.dev](https://cademi.dev)**.
 
 ```sh
-curl -fsSL https://cli.cademi.dev/install.sh | bash   # install (macOS, Linux)
+curl -fsSL https://cli.cademi.dev/install.sh | bash   # install the CLI (macOS, Linux)
 export CADEMI_API_KEY=ck_test_...                     # authenticate without a browser
 cademi products list --json                           # every API operation is a command
 cademi commands --brief --json                        # list all commands
-cademi bug                                            # report a problem
+cademi bug                                            # report a CLI problem
 ```
 
 **AI agents:** read [AGENTS.md](AGENTS.md).
 
-## Install
+## Report a problem
+
+| You want to | Go to |
+|---|---|
+| Report an API bug (an endpoint, status, error, field, or event that does not match the docs) | [API bug report](https://github.com/minhacademi/developers/issues/new?template=api_problem.yml) |
+| Report a CLI bug | Run `cademi bug`, or [open a CLI bug report](https://github.com/minhacademi/developers/issues/new?template=bug_report.yml) |
+| Report an install or update problem | [Install or update problem](https://github.com/minhacademi/developers/issues/new?template=install_update.yml) |
+| Request a feature for the API or the CLI | [Feature request](https://github.com/minhacademi/developers/issues/new?template=feature_request.yml) |
+| Fix or improve the documentation | [Documentation problem](https://github.com/minhacademi/developers/issues/new?template=documentation.yml) |
+| Ask how to do something | [Discussions](https://github.com/minhacademi/developers/discussions) |
+| Report a security vulnerability | [Private report](https://github.com/minhacademi/developers/security/advisories/new), never a public issue |
+| Get help with your account, plan, or data | Cademí support |
+
+Include the `request_id` of any API error: it lets Cademí find the call without any other data. See [CONTRIBUTING.md](CONTRIBUTING.md) for what goes where. Please write issues and discussions in English.
+
+Issues are public. Never paste an API key (`ck_live_...`, `ck_test_...`), an access token, a signing secret, or personal data of your users.
+
+## Install the CLI
 
 macOS and Linux:
 
@@ -30,27 +45,7 @@ irm https://cli.cademi.dev/install.ps1 | iex
 
 The CLI keeps itself up to date. To update now, run `cademi update`. See [Installation](https://cademi.dev/cli/installation).
 
-## Get started
-
-```sh
-cademi auth login
-cademi products list --limit 5
-cademi --help
-```
-
-## Report a problem
-
-Run `cademi bug`. It opens a new issue here with your CLI version, platform, and settings already filled in. Review the text before you submit it.
-
-- **Bugs and feature requests:** [open an issue](https://github.com/minhacademi/cademi-cli/issues/new/choose).
-- **Questions and ideas:** [Discussions](https://github.com/minhacademi/cademi-cli/discussions).
-- **Security vulnerabilities:** never in a public issue. See [SECURITY.md](SECURITY.md).
-- **A problem with the API itself** (an endpoint, your account, or your data): contact Cademí support.
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for what goes where. Please write issues and discussions in English.
-
-Issues are public. Never paste an API key (`ck_live_...`, `ck_test_...`), an access token, a signing secret, or personal data of your users.
-
 ## Release notes
 
-See [CHANGELOG.md](CHANGELOG.md).
+- API: [cademi.dev/api/changelog](https://cademi.dev/api/changelog)
+- CLI: [CHANGELOG.md](CHANGELOG.md)
