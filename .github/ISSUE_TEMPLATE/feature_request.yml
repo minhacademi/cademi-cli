@@ -1,0 +1,21 @@
+name: Feature request
+description: Suggest a new command, flag, or behavior for the cademi CLI.
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What you are trying to do
+      description: The task or workflow, and what makes it hard with the CLI today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you would like
+      description: The command, flag, or output you have in mind. An example helps.
+  - type: input
+    id: version
+    attributes:
+      label: CLI version
+      placeholder: cademi 0.1.1

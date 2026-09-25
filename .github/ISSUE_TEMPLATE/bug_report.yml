@@ -1,0 +1,49 @@
+name: Bug report
+description: Something in the cademi CLI does not work as documented.
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. `cademi bug` fills in the environment fields for you.
+
+        **This issue is public.** Never paste an API key (`ck_live_...`, `ck_test_...`), an access token, a signing secret, or personal data of your users. For security problems, see [SECURITY.md](https://github.com/minhacademi/cademi-cli/blob/main/SECURITY.md).
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you ran, what you expected, and what happened instead.
+      placeholder: |
+        I ran `cademi products list --all` and expected every product, but got only the first page.
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command and output
+      description: The exact command and its output. Add `--debug` to include the HTTP requests (secrets are never logged). Remove anything sensitive.
+      render: text
+  - type: input
+    id: version
+    attributes:
+      label: CLI version
+      description: Output of `cademi version`.
+      placeholder: cademi 0.1.1 (api 3.4.4, commit 517cbbe)
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      placeholder: darwin/arm64
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Output of `cademi env`. It never includes secrets.
+      render: text
+  - type: input
+    id: request-id
+    attributes:
+      label: request_id
+      description: If the API returned an error, its `request_id` helps Cademí find the call.

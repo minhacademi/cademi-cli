@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://cademi.dev/cli
+    about: Guides for installing, signing in, and using the CLI.
+  - name: Questions and ideas
+    url: https://github.com/minhacademi/cademi-cli/discussions
+    about: Ask how to do something or share an idea.
+  - name: Security vulnerability
+    url: https://github.com/minhacademi/cademi-cli/security/advisories/new
+    about: Report a vulnerability privately. Never in a public issue.
+  - name: A problem with the Cademí API or your account
+    url: https://cademi.dev/api
+    about: Endpoints, permissions, or data in your account belong to Cademí support, not to this repository.
