@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.2 - 2026-09-25
+
+- `cademi bug` opens a new issue in this repository with your CLI version, platform, and settings filled in. Nothing is sent until you submit it in the browser. `--print` prints the URL instead.
+- `--all` now works on every paginated list, including users, enrollments, access schedules, comments, and questions.
+- `cademi api` keeps query parameter names as written, such as `tag_id[]`.
+- A missing credential exits with code `3`, like other authentication errors.
+
 ## 0.1.1 - 2026-09-25
 
 - `cademi env` shows the effective settings and where each value comes from (flag, environment variable, config file, profile, keychain, or default). `cademi env <name>` prints a single value.
