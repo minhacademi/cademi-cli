@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3 - 2026-09-25
+
+- `cademi commands` lists every command in one call, with the API route, permission, arguments, and flags. `--json` for scripts and AI agents, `--brief` for a small index, and a prefix narrows the list (`cademi commands products`).
+
 ## 0.1.2 - 2026-09-25
 
 - `cademi bug` opens a new issue in this repository with your CLI version, platform, and settings filled in. Nothing is sent until you submit it in the browser. `--print` prints the URL instead.

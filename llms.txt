@@ -1,0 +1,20 @@
+# cademi CLI
+
+> Command-line tool for the Cademí API v3 (an LMS): every API operation as a command, human or credential sign-in, event forwarding to localhost, declarative configuration, and file transfer. Install with `curl -fsSL https://cli.cademi.dev/install.sh | bash`; authenticate unattended with `CADEMI_API_KEY`; list every command with `cademi commands --brief --json`.
+
+- [AGENTS.md](https://github.com/minhacademi/cademi-cli/blob/main/AGENTS.md): short guide for AI agents (install, auth without a browser, discovery, exit codes, reporting)
+- [Overview](https://cademi.dev/cli.md)
+- [Installation](https://cademi.dev/cli/installation.md)
+- [Authentication](https://cademi.dev/cli/authentication.md)
+- [Commands](https://cademi.dev/cli/commands.md)
+- [cademi api](https://cademi.dev/cli/api.md)
+- [cademi listen](https://cademi.dev/cli/listen.md)
+- [Environment and diagnostics](https://cademi.dev/cli/environment.md)
+- [Exit codes](https://cademi.dev/cli/exit-codes.md)
+- [CI and automation](https://cademi.dev/cli/ci.md)
+- [Cademí developer docs index](https://cademi.dev/llms.txt): the full API v3 guides and reference
+
+## Optional
+
+- [Changelog](https://github.com/minhacademi/cademi-cli/blob/main/CHANGELOG.md)
+- [Contributing](https://github.com/minhacademi/cademi-cli/blob/main/CONTRIBUTING.md)

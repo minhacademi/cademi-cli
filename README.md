@@ -4,6 +4,16 @@
 
 This repository is where you report bugs, request features, and ask questions about the CLI. The documentation lives at **[cademi.dev/cli](https://cademi.dev/cli)**.
 
+```sh
+curl -fsSL https://cli.cademi.dev/install.sh | bash   # install (macOS, Linux)
+export CADEMI_API_KEY=ck_test_...                     # authenticate without a browser
+cademi products list --json                           # every API operation is a command
+cademi commands --brief --json                        # list all commands
+cademi bug                                            # report a problem
+```
+
+**AI agents:** read [AGENTS.md](AGENTS.md).
+
 ## Install
 
 macOS and Linux:
