@@ -2,6 +2,13 @@
 
 Release notes of the `cademi` CLI. API release notes: https://cademi.dev/api/changelog
 
+## 0.1.4 - 2026-09-25
+
+- `cademi bug --api` opens the API bug report instead of the CLI one, with `--endpoint` and `--request-id` filled in. `--request-id` also works for CLI bugs.
+- Issues now go to this repository, `minhacademi/developers`, which takes reports for both the API and the CLI.
+- Built for API release 3.4.5.
+- Mutually exclusive flags exit with code `2`.
+
 ## 0.1.3 - 2026-09-25
 
 - `cademi commands` lists every command in one call, with the API route, permission, arguments, and flags. `--json` for scripts and AI agents, `--brief` for a small index, and a prefix narrows the list (`cademi commands products`).
