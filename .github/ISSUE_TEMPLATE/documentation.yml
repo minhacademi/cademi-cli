@@ -2,6 +2,10 @@ name: Documentation problem
 description: Something in the CLI guides at cademi.dev/cli is wrong, unclear, or missing.
 labels: ["documentation", "needs-triage"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Please write in English, so everyone who uses the CLI can follow the conversation.
   - type: input
     id: page
     attributes:

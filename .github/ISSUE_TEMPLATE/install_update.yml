@@ -5,6 +5,8 @@ body:
   - type: markdown
     attributes:
       value: |
+        Please write in English, so everyone who uses the CLI can follow the conversation.
+
         Installation and updates are described in [Installation](https://cademi.dev/cli/installation).
 
         **This issue is public.** Never paste an API key (`ck_live_...`, `ck_test_...`), an access token, or a signing secret.

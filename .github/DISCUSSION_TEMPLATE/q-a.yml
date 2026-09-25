@@ -4,6 +4,8 @@ body:
   - type: markdown
     attributes:
       value: |
+        Please write in English, so everyone who uses the CLI can follow the conversation.
+
         Check [cademi.dev/cli](https://cademi.dev/cli) first. Found a bug? Run `cademi bug` instead.
 
         **Discussions are public.** Never paste an API key, an access token, a signing secret, or personal data of your users.

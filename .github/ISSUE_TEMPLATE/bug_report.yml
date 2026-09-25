@@ -5,6 +5,8 @@ body:
   - type: markdown
     attributes:
       value: |
+        Please write in English, so everyone who uses the CLI can follow the conversation.
+
         Thanks for reporting. `cademi bug` fills in the environment fields for you.
 
         **This issue is public.** Never paste an API key (`ck_live_...`, `ck_test_...`), an access token, a signing secret, or personal data of your users. For security problems, see [SECURITY.md](https://github.com/minhacademi/cademi-cli/blob/main/SECURITY.md).

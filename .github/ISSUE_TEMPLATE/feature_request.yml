@@ -2,6 +2,10 @@ name: Feature request
 description: Suggest a new command, flag, or behavior for the cademi CLI.
 labels: ["enhancement", "needs-triage"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Please write in English, so everyone who uses the CLI can follow the conversation.
   - type: textarea
     id: problem
     attributes:

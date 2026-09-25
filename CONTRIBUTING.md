@@ -2,6 +2,8 @@
 
 Thanks for helping improve the `cademi` CLI. The CLI source code is maintained by Cademí in a separate repository, so this repository does not accept pull requests. It is the place for reports, requests, and questions.
 
+Issues and discussions are in English, so everyone who uses the CLI can follow them.
+
 ## Where to go
 
 | You want to | Go to |
