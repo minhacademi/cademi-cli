@@ -2,6 +2,12 @@
 
 Release notes of the `cademi` CLI. API release notes: https://cademi.dev/api/changelog
 
+## 0.1.7 - 2026-09-26
+
+- `CADEMI_CLIENT_REQUEST_ID` sends your own identifier in the `X-Client-Request-Id` header of every request: up to 64 letters, digits, `.`, `_`, or `-`. The API returns it in the response and records it in the request log. An invalid value exits with code `2`.
+- `CADEMI_MAX_RETRIES` (default `3`; `0` turns retries off) and `CADEMI_MAX_RETRY_WAIT` (default `60s`) control automatic retries. A `429` that asks for a longer wait than `CADEMI_MAX_RETRY_WAIT` fails right away.
+- `cademi profiles list` shows the API URL and your account's platform address in separate columns, `API` and `PLATFORM`, and `--json` includes `platform`.
+
 ## 0.1.6 - 2026-09-26
 
 - `cademi bug` no longer puts your account's platform address, the credential ID, or the profile name in the public issue.
