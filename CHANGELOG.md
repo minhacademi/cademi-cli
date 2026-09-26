@@ -2,6 +2,11 @@
 
 Release notes of the `cademi` CLI. API release notes: https://cademi.dev/api/changelog
 
+## 0.1.8 - 2026-09-26
+
+- `cademi env` shows `max_retries` and `max_retry_wait`, and `client_request_id` when `CADEMI_CLIENT_REQUEST_ID` is set, each with where its value comes from.
+- The `--output` help of the commands that print text by default (`auth status`, `env`, `profiles list`, `commands`, `doctor`, `config validate`, and `config plan`) says so.
+
 ## 0.1.7 - 2026-09-26
 
 - `CADEMI_CLIENT_REQUEST_ID` sends your own identifier in the `X-Client-Request-Id` header of every request: up to 64 letters, digits, `.`, `_`, or `-`. The API returns it in the response and records it in the request log. An invalid value exits with code `2`.
