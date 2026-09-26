@@ -2,6 +2,15 @@
 
 Release notes of the `cademi` CLI. API release notes: https://cademi.dev/api/changelog
 
+## 0.1.5 - 2026-09-26
+
+- `cademi auth login --platform <address>` goes straight to your account's platform instead of the platform selector in the browser. The address is saved in the profile, reused on the next login, and shown by `cademi auth status` and `cademi env`.
+- Human login checks the `iss` parameter returned by the authorization (RFC 9207). It rejects a response whose `iss` does not match the issuer, or that has no `iss` when the server announces support for it.
+- Choosing Deny in the browser ends the login right away, without saving anything.
+- When the platform refuses the administrator, the login ends right away with the reason: `mfa_required` (two-factor authentication is not turned on), `account_not_eligible` (the account cannot authorize the CLI), or `platform_mismatch` (the administrator belongs to another platform; the message suggests `--platform`).
+- The base URL prompt is now "Cademí API URL". Clearer messages while waiting for the browser and for credentials that require human mode.
+- Built for API release 3.4.7.
+
 ## 0.1.4 - 2026-09-25
 
 - `cademi bug --api` opens the API bug report instead of the CLI one, with `--endpoint` and `--request-id` filled in. `--request-id` also works for CLI bugs.
