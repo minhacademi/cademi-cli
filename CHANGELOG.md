@@ -2,6 +2,13 @@
 
 Release notes of the `cademi` CLI. API release notes: https://cademi.dev/api/changelog
 
+## 0.1.6 - 2026-09-26
+
+- `cademi bug` no longer puts your account's platform address, the credential ID, or the profile name in the public issue.
+- In `cademi env`, the operating system and architecture are reported as `os_arch`; `platform` is only your account's platform address.
+- The browser page after sign-in says "Cademí CLI authorized" only for a valid response. A rejected `iss` shows "Authorization rejected", and `account_not_eligible` has its own page.
+- `cademi auth logout --help` explains how to revoke the credential, and the `--base-url` help describes it as the Cademí API URL.
+
 ## 0.1.5 - 2026-09-26
 
 - `cademi auth login --platform <address>` goes straight to your account's platform instead of the platform selector in the browser. The address is saved in the profile, reused on the next login, and shown by `cademi auth status` and `cademi env`.
